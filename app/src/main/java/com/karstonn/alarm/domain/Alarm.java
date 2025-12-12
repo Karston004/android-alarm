@@ -3,16 +3,18 @@ import java.time.LocalTime;
 import java.time.DayOfWeek;
 import java.util.EnumSet;
 
-public class Alarm {
-    public EnumSet<DayOfWeek> activeDays;
-    public LocalTime time;
+public final class Alarm {
+    private final EnumSet<DayOfWeek> activeDays;
+    private final LocalTime time;
     public Alarm(EnumSet<DayOfWeek> activeDays, LocalTime time) {
         this.activeDays = activeDays.clone();
         this.time = time;
     }
-
-    public Alarm(Alarm clone){
-        this.activeDays = clone.activeDays;
-        this.time = clone.time;
+    public Alarm(Alarm other){
+        this.activeDays = other.activeDays.clone();
+        this.time = other.time;
     }
+
+    public EnumSet<DayOfWeek> getActiveDays() {return getActiveDays().clone();}
+    public LocalTime getTime() {return time;}
 }
