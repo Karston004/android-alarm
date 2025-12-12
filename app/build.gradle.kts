@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.alarm"
+    namespace = "com.Karstonn.alarm"
     compileSdk {
         version = release(36)
     }
