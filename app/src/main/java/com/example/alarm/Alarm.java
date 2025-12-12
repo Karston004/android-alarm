@@ -10,4 +10,9 @@ public class Alarm {
         this.activeDays = activeDays.clone();
         this.time = time;
     }
+
+    public Alarm(Alarm clone){
+        this.activeDays = clone.activeDays;
+        this.time = clone.time;
+    }
 }
