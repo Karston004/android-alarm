@@ -1,4 +1,6 @@
-package com.karstonn.alarm.domain;
+package com.karstonn.alarm.domain.scheduling;
+
+import com.karstonn.alarm.domain.Alarm;
 
 public interface AlarmScheduler {
     public void setAlarmListener(AlarmFiredListener listener);
