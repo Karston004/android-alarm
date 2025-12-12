@@ -1,7 +1,7 @@
 package com.karstonn.alarm.data;
 
 import com.karstonn.alarm.domain.Alarm;
-import com.karstonn.alarm.domain.AlarmRepo;
+import com.karstonn.alarm.domain.repository.AlarmRepo;
 
 import java.util.ArrayList;
 import java.util.Collections;

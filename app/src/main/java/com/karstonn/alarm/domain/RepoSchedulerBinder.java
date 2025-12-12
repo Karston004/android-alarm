@@ -1,5 +1,7 @@
 package com.karstonn.alarm.domain;
 
+import com.karstonn.alarm.domain.repository.AlarmRepoListener;
+
 public final class RepoSchedulerBinder implements AlarmRepoListener {
     AlarmScheduler alarmScheduler;
     public RepoSchedulerBinder (AlarmScheduler scheduler) {this.alarmScheduler = scheduler;}
