@@ -1,4 +1,4 @@
-package com.Karstonn.alarm;
+package com.karstonn.alarm;
 
 import org.junit.Test;
 

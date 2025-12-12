@@ -1,4 +1,4 @@
-package com.Karstonn.alarm;
+package com.karstonn.alarm.domain;
 
 import java.util.List;
 

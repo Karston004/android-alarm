@@ -1,4 +1,4 @@
-package com.Karstonn.alarm;
+package com.karstonn.alarm.domain;
 import java.time.LocalTime;
 import java.time.DayOfWeek;
 import java.util.EnumSet;

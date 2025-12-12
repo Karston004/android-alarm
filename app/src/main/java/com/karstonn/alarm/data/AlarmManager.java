@@ -1,9 +1,12 @@
-package com.Karstonn.alarm;
+package com.karstonn.alarm.data;
+
+import com.karstonn.alarm.domain.Alarm;
+import com.karstonn.alarm.domain.AlarmController;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-public class AlarmManager implements  AlarmController{
+public class AlarmManager implements AlarmController {
 
     List<Alarm> alarms = new ArrayList<>();
     public void setAlarm(Alarm alarm){
