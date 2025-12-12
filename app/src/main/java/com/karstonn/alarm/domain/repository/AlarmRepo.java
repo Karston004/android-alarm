@@ -7,5 +7,5 @@ import java.util.List;
 public interface AlarmRepo {
     void setAlarm(Alarm alarm);
     List<Alarm> listAlarms();
-    void removeAlarm(Alarm alarm);
+    void removeAlarm(String alarmID);
 }

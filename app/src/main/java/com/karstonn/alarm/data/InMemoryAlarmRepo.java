@@ -5,17 +5,23 @@ import com.karstonn.alarm.domain.repository.AlarmRepo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
 public class InMemoryAlarmRepo implements AlarmRepo {
-    List<Alarm> alarms = new ArrayList<>();
+    private Map<String,Alarm> alarms = new HashMap<>();
 
     public void setAlarm(Alarm alarm){
-        alarms.add(new Alarm(alarm));
+        String alarmID;
+        do {alarmID = UUID.randomUUID().toString();} while (alarms.containsKey(alarmID));
+        alarms.put(alarmID,new Alarm(alarmID,alarm));
     }
     public List<Alarm> listAlarms(){
-        return  Collections.unmodifiableList(alarms);
+        return List.copyOf(new ArrayList<>(alarms.values()));
     }
-    public void removeAlarm(Alarm alarm){
-        alarms.remove(alarm);
+    public void removeAlarm(String alarmID){
+        alarms.remove(alarmID);
     }
 }
