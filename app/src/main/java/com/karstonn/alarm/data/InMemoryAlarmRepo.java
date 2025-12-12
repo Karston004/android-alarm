@@ -6,9 +6,9 @@ import com.karstonn.alarm.domain.AlarmRepo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-public class AlarmManager implements AlarmRepo {
-
+public class InMemoryAlarmRepo implements AlarmRepo {
     List<Alarm> alarms = new ArrayList<>();
+
     public void setAlarm(Alarm alarm){
         alarms.add(new Alarm(alarm));
     }
