@@ -5,5 +5,5 @@ import com.karstonn.alarm.domain.Alarm;
 import java.util.List;
 
 public interface AlarmReadOnlyRepo {
-    public List<Alarm> listAlarms();
+    List<Alarm> listAlarms();
 }
