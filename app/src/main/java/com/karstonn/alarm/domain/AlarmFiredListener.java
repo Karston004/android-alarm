@@ -1,5 +1,5 @@
 package com.karstonn.alarm.domain;
 
 public interface AlarmFiredListener {
-    public void onAlarmFired();
+    public void onAlarmFired(Alarm alarm);
 }
